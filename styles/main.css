@@ -19,11 +19,15 @@ header {
 #logo {
     padding-right: 8px;
     padding-left: 8px;
-    width: 400px;
+    width: 405px;
     font-size: 30pt;
     background-color: black;
     color: white;
     font-family: 'Lexend Deca', sans-serif;
+}
+
+.logo-detail {
+    color: rgb(0, 190, 245);
 }
 
 #message {
@@ -87,8 +91,8 @@ header {
 
 .section-tag {
     font-family: 'Anton', sans-serif;
-    font-size: 15pt;
-    color: rgb(170, 170, 170);
+    font-size: 17pt;
+    color: rgb(0, 190, 245);
 }
 
 .section-content {
