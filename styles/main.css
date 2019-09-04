@@ -16,6 +16,12 @@ header {
     justify-content: flex-start;
 }
 
+.flex-block {
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
+
 #flex-logo {
     width: 718px;
     max-width: 718px;
