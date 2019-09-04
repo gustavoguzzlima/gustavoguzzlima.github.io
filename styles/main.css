@@ -1,0 +1,98 @@
+header, body, footer {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+   padding-top: 30px;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+#logo {
+    padding-right: 8px;
+    padding-left: 8px;
+    width: 400px;
+    font-size: 30pt;
+    background-color: black;
+    color: white;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+#message {
+    font-family: 'Cairo', sans-serif;
+    font-size: 20pt;
+    padding-bottom: 10px;
+    width: 718px;
+    border-bottom-style: groove;
+    border-bottom-width: 3px;
+}
+
+#social {
+    margin-top: 20px;
+    display: flex;
+    height: 20pt;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: stretch;
+}
+
+.bt-socialmedia, 
+.bt-socialmedia:link, 
+.bt-socialmedia:visited {
+    margin-right: 10px;
+    margin-left: 10px;
+    height: 20pt;
+    font-size: 15pt;
+    font-family: 'Josefin Sans', sans-serif;
+    text-decoration: none;
+    color: black;
+}
+
+#github-link {
+    text-decoration-color: #24292e;
+}
+
+#twitter-link {
+    text-decoration-color: #00aced;
+}
+
+#medium-link {
+    text-decoration-color: #44b3a4;
+}
+
+#ig-link {
+    text-decoration-color: #C13584;
+}
+
+#steam-link {
+    text-decoration-color: #66c0f4;
+}
+
+.bt-socialmedia:hover {
+    text-decoration: underline;
+    text-decoration-style: dotted;
+}
+
+.bt-socialmedia:active {
+    color: black;
+}
+
+.section-tag {
+    font-family: 'Anton', sans-serif;
+    font-size: 15pt;
+    color: rgb(170, 170, 170);
+}
+
+.section-content {
+    width: 718px;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+}
