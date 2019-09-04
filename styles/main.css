@@ -7,6 +7,14 @@ header {
    padding-top: 40px;
 }
 
+.no-select {
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+}
+
 .flex-container {
     display: flex;
     flex-wrap: wrap;
