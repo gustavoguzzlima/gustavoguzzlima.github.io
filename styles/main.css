@@ -4,7 +4,7 @@ header, body, footer {
 }
 
 header {
-   padding-top: 30px;
+   padding-top: 40px;
 }
 
 .flex-container {
@@ -14,6 +14,17 @@ header {
     align-content: center;
     align-items: flex-start;
     justify-content: flex-start;
+}
+
+#flex-logo {
+    width: 718px;
+    max-width: 718px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: center;
+    align-items: flex-end;
+    justify-content: space-between;
 }
 
 #logo {
@@ -28,6 +39,15 @@ header {
 
 .logo-detail {
     color: rgb(0, 190, 245);
+}
+
+#avatar {
+    margin-right: 10%;
+    width: 150px;
+    height: 150px;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 100%;
 }
 
 #message {
