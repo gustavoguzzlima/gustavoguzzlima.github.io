@@ -15,6 +15,40 @@ header {
     user-select: none;
 }
 
+/* COLORS */
+
+.shark {
+   color:#29292A;
+}
+
+.bg-shark {
+   background-color:#29292A;
+}
+
+.martini {
+    color: #B49F9F;
+}
+
+.bg-martini {
+    background-color: #B49F9F;
+}
+
+.cucumber {
+   color: #7CA54A;
+}
+
+.bg-cucumber {
+   background-color: #7CA54A;
+}
+
+.deluge {
+    color: #7862A5;
+}
+
+.bg-deluge {
+    background-color: #7862A5;
+}
+
 /* FLEX */
 
 .flex {
