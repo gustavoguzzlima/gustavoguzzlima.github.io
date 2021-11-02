@@ -15,7 +15,9 @@ header {
     user-select: none;
 }
 
-.flex-container {
+/* FLEX */
+
+.flex {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -24,7 +26,7 @@ header {
     justify-content: flex-start;
 }
 
-.flex-center {
+.center {
     align-content: center;
     align-items: center;
     justify-content: center;
