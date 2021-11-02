@@ -26,6 +26,14 @@ header {
     justify-content: flex-start;
 }
 
+.stretch-x {
+    width: 100vw;
+}
+
+.stretch-y {
+    height: 100vh;
+}
+
 .center {
     align-content: center;
     align-items: center;
