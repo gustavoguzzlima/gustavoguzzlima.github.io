@@ -26,6 +26,14 @@ header {
     justify-content: flex-start;
 }
 
+.row {
+    flex-direction: row;
+}
+
+.column {
+   flex-direction: column; 
+}
+
 .stretch-x {
     width: 100vw;
 }
