@@ -6,6 +6,14 @@ header, body, footer {
     padding: 0;
 }
 
+#top-warning {
+    position: absolute;
+    top: 0;
+    font-family: 'Roboto Mono', sans-serif;
+    font-weight: bold;
+    font-size: 22px;
+}
+
 .no-select {
     -webkit-user-select: none;
     -khtml-user-select: none;
@@ -82,6 +90,14 @@ header, body, footer {
 
 .color-pink-bg {
    background-color: #ff79c6; 
+}
+
+.color-yellow {
+    color: #f1fa8c;
+}
+
+.color-yellow-bg {
+    background-color: #f1fa8c;
 }
 
 /* FLEX */
