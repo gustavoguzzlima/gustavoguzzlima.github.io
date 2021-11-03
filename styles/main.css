@@ -15,14 +15,6 @@ header, body, footer {
 
 /* COLORS */
 
-.color-shark {
-   color:#29292A !important;
-}
-
-.color-shark-bg {
-   background-color:#29292A !important;
-}
-
 .color-martini {
     color: #B49F9F !important;
 }
@@ -65,6 +57,14 @@ header, body, footer {
 
 .color-background-bg {
     background-color: #282a36;
+}
+
+.color-foreground {
+   color:  #f8f8f2;
+}
+
+.color-foreground-bg {
+   background-color:  #f8f8f2;
 }
 
 .color-purple {
@@ -135,13 +135,10 @@ header {
     padding-left: 8px;
     width: 405px;
     font-size: 30pt;
-    background-color: black;
-    color: white;
     font-family: 'Lexend Deca', sans-serif;
 }
 
 #title {
-    color: white;
     font-size: 32px;
     font-style: italic;
     font-family: 'Playfair Display', serif;
