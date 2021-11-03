@@ -15,36 +15,72 @@ header, body, footer {
 
 /* COLORS */
 
-.shark {
+.color-shark {
    color:#29292A !important;
 }
 
-.bg-shark {
+.color-shark-bg {
    background-color:#29292A !important;
 }
 
-.martini {
+.color-martini {
     color: #B49F9F !important;
 }
 
-.bg-martini {
+.color-martini-bg {
     background-color: #B49F9F !important;
 }
 
-.cucumber {
+.color-cucumber {
    color: #7CA54A !important;
 }
 
-.bg-cucumber {
+.color-cucumber-bg {
    background-color: #7CA54A !important;
 }
 
-.deluge {
+.color-deluge {
     color: #7862A5 !important;
 }
 
-.bg-deluge {
+.color-deluge-bg {
     background-color: #7862A5 !important;
+}
+
+.color-comment {
+   color: #6272a4
+}
+
+.color-cyan {
+   color:  #8be9fd;
+}
+
+.color-cyan-bg {
+   background-color:  #8be9fd;
+}
+
+.color-background {
+   color: #282a36;
+}
+
+.color-background-bg {
+    background-color: #282a36;
+}
+
+.color-purple {
+    color: #bd93f9;
+}
+
+.color-purple-bg {
+    background-color: #bd93f9;
+}
+
+.color-pink {
+   color: #ff79c6; 
+}
+
+.color-pink-bg {
+   background-color: #ff79c6; 
 }
 
 /* FLEX */
