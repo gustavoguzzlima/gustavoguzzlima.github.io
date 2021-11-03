@@ -131,6 +131,12 @@ header {
     gap: 50px;
 }
 
+#gif {
+    width: 200px;
+    height: 200px; 
+    content: url(/assets/giphy.webp);
+}
+
 #name {
     padding-right: 8px;
     padding-left: 8px;
