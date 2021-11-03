@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis&display=swap');
 
 header, body, footer {
     margin: 0;
@@ -145,20 +146,22 @@ header {
     width: max-content;
 }
 
-#avatar {
-    width: 300px;
-    height: 150px;
-    border-radius: 10px;
+section {
+    max-width: 720px;
 }
 
-.section-tag {
-    font-family: 'Anton', sans-serif;
-    font-size: 17pt;
-    color: rgb(0, 190, 245);
+section > p {
+   max-width: 540px; 
 }
 
-.section-content {
-    width: 718px;
+.section-title {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 28px;
+}
+
+.section-text {
     justify-content: center;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Dosis', sans-serif;
+    font-size: 22px;
+    text-align: justify;
 }
