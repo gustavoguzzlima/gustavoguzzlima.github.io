@@ -1,4 +1,4 @@
-baseURL = 'https://gustavoguzzlima.github.io/'
+baseURL = 'https://gustavolima.dev.br/'
 title = 'Gustavo D. J. Lima'
 theme = 'PaperMod'
 defaultContentLanguage = 'en'
@@ -44,6 +44,9 @@ enableEmoji = true
 [[params.socialIcons]]
   name = 'linkedin'
   url = 'https://linkedin.com/in/gustav0lima'
+[[params.socialIcons]]
+  name = 'x'
+  url = 'https://x.com/0x477573'
 
 [menu]
   [[menu.main]]
