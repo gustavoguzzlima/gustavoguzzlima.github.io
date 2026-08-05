@@ -1,0 +1,59 @@
+baseURL = 'https://gustavoguzzlima.github.io/blog/'
+title = 'Gustavo Lima'
+theme = 'PaperMod'
+defaultContentLanguage = 'en'
+enableEmoji = true
+
+[languages.en]
+  languageCode = 'en-us'
+  weight = 1
+
+[languages.pt-br]
+  languageCode = 'pt-br'
+  title = 'Gustavo Lima'
+  weight = 2
+
+[params]
+  description = 'Technical writing by Gustavo Lima — notes on software and systems.'
+  defaultTheme = 'auto'
+  ShowReadingTime = true
+  ShowWordCount = true
+  ShowCodeCopyButtons = true
+  ShowPostNavLinks = true
+  ShowToc = true
+  ShowShareButtons = false
+  enableKaTeX = true
+
+  [params.homeInfoParams]
+    title = 'Gustavo Lima'
+    content = 'Technical writing by Gustavo Lima — notes on software and systems.'
+
+[[params.socialIcons]]
+  name = 'github'
+  url = 'https://github.com/gustavoguzzlima'
+
+[menu]
+  [[menu.main]]
+    identifier = 'archive'
+    name = 'Archive'
+    url = '/archive/'
+  [[menu.main]]
+    identifier = 'search'
+    name = 'Search'
+    url = '/search/'
+
+[languages.pt-br.menu]
+  [[languages.pt-br.menu.main]]
+    identifier = 'archive'
+    name = 'Arquivo'
+    url = '/pt-br/archive/'
+  [[languages.pt-br.menu.main]]
+    identifier = 'search'
+    name = 'Buscar'
+    url = '/pt-br/search/'
+
+[markup.highlight]
+  lineNos = true
+  lineNumbersInTable = true
+  noClasses = false
+  guessSyntax = true
