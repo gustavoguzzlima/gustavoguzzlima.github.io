@@ -1,4 +1,4 @@
-baseURL = 'https://gustavoguzzlima.github.io/blog/'
+baseURL = 'https://gustavoguzzlima.github.io/'
 title = 'Gustavo Lima'
 theme = 'PaperMod'
 defaultContentLanguage = 'en'
@@ -14,7 +14,7 @@ enableEmoji = true
   weight = 2
 
 [params]
-  description = 'Technical writing by Gustavo Lima — notes on software and systems.'
+  description = 'I make systems talk to each other — software, infra, and the occasional critical call, I guess...'
   defaultTheme = 'auto'
   ShowReadingTime = true
   ShowWordCount = true
@@ -27,7 +27,7 @@ enableEmoji = true
   [params.profileMode]
     enabled = true
     title = 'Gustavo Lima'
-    subtitle = 'Technical writing by Gustavo Lima — notes on software and systems.'
+    subtitle = 'I make systems talk to each other — software, infra, and the occasional critical call, I guess...'
     imageUrl = 'avatar.png'
     imageWidth = 300
     imageHeight = 300

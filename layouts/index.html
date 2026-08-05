@@ -1,0 +1,20 @@
+{{ define "main" }}
+{{ partial "index_profile.html" . }}
+{{ $posts := where site.RegularPages "Type" "in" site.Params.mainSections }}
+{{ if $posts }}
+<div class="post-container">
+  <h2 class="recent-posts-title">{{ i18n "recentPosts" }}</h2>
+  {{ range first 5 $posts }}
+  <article class="post-entry">
+    <header class="entry-header">
+      <h2 class="entry-hint-parent">{{ .Title }}</h2>
+    </header>
+    <footer class="entry-footer">
+      {{ partial "post_meta.html" . }}
+    </footer>
+    <a class="entry-link" aria-label="post link to {{ .Title | plainify }}" href="{{ .Permalink }}"></a>
+  </article>
+  {{ end }}
+</div>
+{{ end }}
+{{ end }}

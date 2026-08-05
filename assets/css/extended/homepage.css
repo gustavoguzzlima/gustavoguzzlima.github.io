@@ -1,0 +1,15 @@
+:root {
+    --main-width: 820px;
+}
+
+.main {
+    padding: calc(var(--gap) * 0.85) calc(var(--gap) * 0.935);
+}
+
+.main .profile {
+    min-height: calc((100vh - var(--header-height) - var(--footer-height) - (var(--gap) * 2)) * 0.765);
+}
+
+.recent-posts-title {
+    margin-bottom: calc(var(--gap) * 1.1);
+}

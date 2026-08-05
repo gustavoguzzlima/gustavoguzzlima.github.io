@@ -1,6 +1,6 @@
 # Blog
 
-Source of https://gustavoguzzlima.github.io/blog/ — a bilingual (EN/PT-BR) Hugo blog with the PaperMod theme.
+Source of https://gustavoguzzlima.github.io/ — a bilingual (EN/PT-BR) Hugo blog with the PaperMod theme.
 
 ## Writing a post
 
