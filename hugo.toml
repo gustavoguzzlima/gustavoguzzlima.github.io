@@ -1,20 +1,26 @@
 baseURL = 'https://gustavoguzzlima.github.io/'
-title = 'Gustavo Lima'
+title = 'Gustavo D. J. Lima'
 theme = 'PaperMod'
 defaultContentLanguage = 'en'
 enableEmoji = true
 
 [languages.en]
-  languageCode = 'en-us'
+  locale = 'en-us'
   weight = 1
 
 [languages.pt-br]
-  languageCode = 'pt-br'
-  title = 'Gustavo Lima'
+  locale = 'pt-br'
+  title = 'Gustavo D. J. Lima'
   weight = 2
 
+  [languages.pt-br.params]
+    description = 'Faço sistemas conversarem entre si — dev, infra e ocasionalmente um acionamento, eu acho...'
+
+    [languages.pt-br.params.profileMode]
+      subtitle = 'Faço sistemas conversarem entre si — dev, infra e ocasionalmente um acionamento, eu acho...'
+
 [params]
-  description = 'I make systems talk to each other — software, infra, and the occasional critical call, I guess...'
+  description = 'I guess I make systems talk to each other — dev, infra, and the occasional critical call...'
   defaultTheme = 'auto'
   ShowReadingTime = true
   ShowWordCount = true
@@ -26,8 +32,8 @@ enableEmoji = true
 
   [params.profileMode]
     enabled = true
-    title = 'Gustavo Lima'
-    subtitle = 'I make systems talk to each other — software, infra, and the occasional critical call, I guess...'
+    title = 'Gustavo D. J. Lima'
+    subtitle = 'I guess I make systems talk to each other — dev, infra, and the occasional critical call...'
     imageUrl = 'avatar.png'
     imageWidth = 300
     imageHeight = 300
@@ -35,6 +41,9 @@ enableEmoji = true
 [[params.socialIcons]]
   name = 'github'
   url = 'https://github.com/gustavoguzzlima'
+[[params.socialIcons]]
+  name = 'linkedin'
+  url = 'https://linkedin.com/in/gustav0lima'
 
 [menu]
   [[menu.main]]
