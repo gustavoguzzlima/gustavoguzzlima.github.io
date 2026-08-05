@@ -24,9 +24,13 @@ enableEmoji = true
   ShowShareButtons = false
   enableKaTeX = true
 
-  [params.homeInfoParams]
+  [params.profileMode]
+    enabled = true
     title = 'Gustavo Lima'
-    content = 'Technical writing by Gustavo Lima — notes on software and systems.'
+    subtitle = 'Technical writing by Gustavo Lima — notes on software and systems.'
+    imageUrl = 'avatar.png'
+    imageWidth = 300
+    imageHeight = 300
 
 [[params.socialIcons]]
   name = 'github'
