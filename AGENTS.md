@@ -7,6 +7,7 @@ Bilingual (EN/PT-BR) Hugo blog on GitHub Pages. PaperMod theme (git submodule), 
 - **Terse output.** Be brief; no long explanations unless asked.
 - **Public repo.** Never commit secrets, tokens, or personal data. Content is CC BY 4.0 (see LICENSE).
 - **Every post is a translation pair**: `content/posts/foo.en.md` + `content/posts/foo.pt-br.md`. Missing half silently breaks the bilingual site — don't create single-language posts.
+- **Conventional commits**, terse subjects (≤ ~50 chars), no bodies unless needed.
 
 ## Workflow
 
