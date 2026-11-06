@@ -3,6 +3,7 @@ title = 'Gustavo D. J. Lima'
 theme = 'PaperMod'
 defaultContentLanguage = 'en'
 enableEmoji = true
+enableRobotsTXT = true
 
 [languages.en]
   locale = 'en-us'
@@ -47,6 +48,13 @@ enableEmoji = true
 [[params.socialIcons]]
   name = 'x'
   url = 'https://x.com/0x477573'
+
+# Medição. Preenchido por scripts/ativar-medicao.sh — ver docs/medicao.md.
+[params.verification]
+  google = ''
+
+[params.analytics]
+  cloudflareToken = ''
 
 [menu]
   [[menu.main]]

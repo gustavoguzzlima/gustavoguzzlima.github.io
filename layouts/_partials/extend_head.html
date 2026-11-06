@@ -1,3 +1,19 @@
+{{/* Verificação do Google Search Console (meta tag). Ativar:                  */}}
+{{/* scripts/ativar-medicao.sh --gsc-token <token>                              */}}
+{{- with site.Params.verification -}}
+{{- with .google }}
+<meta name="google-site-verification" content="{{ . }}">
+{{- end -}}
+{{- end -}}
+{{/* x-default: idioma padrão do site é en, então o fallback aponta para ele. */}}
+{{- if .IsTranslated -}}
+{{- $x := .Permalink -}}
+{{- range .AllTranslations -}}
+{{- if eq .Lang "en" -}}{{- $x = .Permalink -}}{{- end -}}
+{{- end }}
+<link rel="alternate" hreflang="x-default" href="{{ $x }}">
+{{- end -}}
+
 {{ if and .Params.math .Site.Params.enableKaTeX }}
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.21/dist/katex.min.css">
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.21/dist/katex.min.js"></script>
