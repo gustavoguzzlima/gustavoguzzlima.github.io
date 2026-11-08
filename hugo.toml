@@ -35,7 +35,9 @@ enableRobotsTXT = true
     enabled = true
     title = 'Gustavo D. J. Lima'
     subtitle = 'I guess I make systems talk to each other — dev, infra, and the occasional critical call...'
-    imageUrl = 'avatar.png'
+    # WebP 300x300 (8 KB) servido de static/: o Hugo não reprocessa, então os
+    # bytes do arquivo são os bytes entregues. O PNG de 109 KB saiu do repo.
+    imageUrl = '/avatar.webp'
     imageWidth = 300
     imageHeight = 300
 
