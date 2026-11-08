@@ -1,8 +1,47 @@
+{{- /*
+  Mermaid sob demanda.
+
+  O import do CDN custa ~210 KB em 30+ requests. Antes ele era um <script>
+  module inline em cada bloco, disparado no parse. Agora:
+    - página sem bloco mermaid: nada é baixado (o shortcode não é chamado);
+    - página com bloco: o módulo só é importado quando o bloco chega perto
+      da viewport (IntersectionObserver, rootMargin 300px);
+    - sem IntersectionObserver: carrega na hora, como antes.
+
+  O tema acompanha o data-theme do PaperMod: no escuro o tema claro do mermaid
+  rendia texto #333 sobre fundo #1d1e20 (1,32:1, reprovado em AA).
+*/ -}}
 <pre class="mermaid">{{ .Inner }}</pre>
-{{ if not (.Page.Scratch.Get "mermaid_loaded") }}
-{{ .Page.Scratch.Set "mermaid_loaded" true }}
+{{- if not (.Page.Scratch.Get "mermaid_loaded") -}}
+{{- .Page.Scratch.Set "mermaid_loaded" true -}}
 <script type="module">
-  import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs";
-  mermaid.initialize({ startOnLoad: true });
+  const blocks = document.querySelectorAll("pre.mermaid");
+  if (blocks.length) {
+    let loading;
+    const render = () => {
+      if (loading) return loading;
+      loading = import("https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs")
+        .then(({ default: mermaid }) => {
+          const dark = document.documentElement.dataset.theme === "dark";
+          mermaid.initialize({ startOnLoad: false, theme: dark ? "dark" : "default" });
+          return mermaid.run({ querySelector: "pre.mermaid" });
+        });
+      return loading;
+    };
+    if (!("IntersectionObserver" in window)) {
+      render();
+    } else {
+      // A observação só começa depois do load: no parse o bloco ainda está na
+      // origem do documento e o primeiro callback do observer diria "visível".
+      const watch = () => {
+        const io = new IntersectionObserver((entries, obs) => {
+          if (entries.some((e) => e.isIntersecting)) { obs.disconnect(); render(); }
+        }, { rootMargin: "0px" });
+        blocks.forEach((b) => io.observe(b));
+      };
+      if (document.readyState === "complete") watch();
+      else window.addEventListener("load", watch, { once: true });
+    }
+  }
 </script>
-{{ end }}
+{{- end -}}
