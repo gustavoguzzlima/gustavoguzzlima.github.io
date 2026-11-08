@@ -56,10 +56,10 @@ enableRobotsTXT = true
 
 # Medição. Preenchido por scripts/ativar-medicao.sh — ver docs/medicao.md.
 [params.verification]
-  google = ''
+  google = 'XYFSN2s8e_8D9maNsDNZNcdHsQ0FA1uvpbpCNReM9cU'
 
 [params.analytics]
-  cloudflareToken = ''
+  cloudflareToken = 'd7e8a1394fe84220aa2094b00b79512f'
 
 [menu]
   [[menu.main]]
