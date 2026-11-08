@@ -22,6 +22,9 @@ enableRobotsTXT = true
 
 [params]
   description = 'I guess I make systems talk to each other — dev, infra, and the occasional critical call...'
+  # og:image padrão do site: o template nativo do Hugo lê esta lista e emite
+  # og:image + twitter:card=summary_large_image. Gerado por scripts/gerar-og-image.sh.
+  images = ['og-image.png']
   defaultTheme = 'auto'
   ShowReadingTime = true
   ShowWordCount = true
