@@ -1,0 +1,8 @@
+{{/* Analytics: Cloudflare Web Analytics (sem cookie, sem banner).             */}}
+{{/* O token é público por natureza (vai no HTML); fica fora do repo até a     */}}
+{{/* conta existir. Ativar: scripts/ativar-medicao.sh --cf-token <token>       */}}
+{{- with site.Params.analytics -}}
+{{- with .cloudflareToken -}}
+<script type="module" defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "{{ . }}", "spa": false}'></script>
+{{- end -}}
+{{- end -}}

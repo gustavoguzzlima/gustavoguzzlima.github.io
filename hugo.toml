@@ -3,6 +3,7 @@ title = 'Gustavo D. J. Lima'
 theme = 'PaperMod'
 defaultContentLanguage = 'en'
 enableEmoji = true
+enableRobotsTXT = true
 
 [languages.en]
   locale = 'en-us'
@@ -21,6 +22,9 @@ enableEmoji = true
 
 [params]
   description = 'I guess I make systems talk to each other — dev, infra, and the occasional critical call...'
+  # og:image padrão do site: o template nativo do Hugo lê esta lista e emite
+  # og:image + twitter:card=summary_large_image. Gerado por scripts/gerar-og-image.sh.
+  images = ['og-image.png']
   defaultTheme = 'auto'
   ShowReadingTime = true
   ShowWordCount = true
@@ -34,7 +38,9 @@ enableEmoji = true
     enabled = true
     title = 'Gustavo D. J. Lima'
     subtitle = 'I guess I make systems talk to each other — dev, infra, and the occasional critical call...'
-    imageUrl = 'avatar.png'
+    # WebP 300x300 (8 KB) servido de static/: o Hugo não reprocessa, então os
+    # bytes do arquivo são os bytes entregues. O PNG de 109 KB saiu do repo.
+    imageUrl = '/avatar.webp'
     imageWidth = 300
     imageHeight = 300
 
@@ -47,6 +53,13 @@ enableEmoji = true
 [[params.socialIcons]]
   name = 'x'
   url = 'https://x.com/0x477573'
+
+# Medição. Preenchido por scripts/ativar-medicao.sh — ver docs/medicao.md.
+[params.verification]
+  google = ''
+
+[params.analytics]
+  cloudflareToken = ''
 
 [menu]
   [[menu.main]]
